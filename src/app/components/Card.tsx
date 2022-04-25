@@ -8,8 +8,8 @@ const Card = () => {
       <div>
           {/* <img src={purple} alt="" /> */}
           <ImageDiv
-            style={{ width: "100%" }}
-            placeholderImg="https://via.placeholder.com/400x200.png?text=This+Will+Be+Shown+Before+Load"
+            style={{ width: "100%", color: "purple" }}
+            placeholderImg="https://via.placeholder.com/400x200.png"
             src={purple}
           />
       </div>
