@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const NotFound = () => {
   return (
-    <Layout backgroundColor="#E5E5E5">
+    <Layout backgroundColor="#FCFBFB">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
