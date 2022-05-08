@@ -1,5 +1,5 @@
 import { useEffect, useState, ImgHTMLAttributes } from 'react';
-import styled from "styled-components";
+// import styled from "styled-components";
 
 interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
     placeholderImg?: any;
