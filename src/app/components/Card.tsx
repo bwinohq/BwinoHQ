@@ -2,14 +2,21 @@ import styled from "styled-components";
 import purple from "../assets/Purple-Card.svg";
 import ImageDiv from "./LazyLoading";
 
+const styles = {
+  height: "200px",
+  width: "200px",
+  backgroundColor: "purple"
+}
+  
+
 const Card = () => {
   return (
     <CardDiv>
       <div>
-          {/* <img src={purple} alt="" /> */}
+          {/* <img src={purple} alt="" loading="lazy"/> */}
           <ImageDiv
             style={{ width: "100%", color: "purple" }}
-            placeholderImg="https://via.placeholder.com/400x200.png"
+            placeholderImg="https://via.placeholder.com/400x400.png"
             src={purple}
           />
       </div>

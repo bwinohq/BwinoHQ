@@ -11,7 +11,7 @@ const EarlyAccess = () => {
 
     const subscribe = (event:any) => {
         setEmail(event.target.value);
-        var url = "https://script.google.com/macros/s/AKfycbyYywXU2ZkMFYmJj64gyUzpaThruG0oLDA_Mae_nJXYFMJ6Op68T6b9ONBOaHJchh-5LQ/exec";
+        var url = "https://script.google.com/a/macros/bwinohq.com/s/AKfycbwZVeERj7y9y2-kYodU71qDfG491PHQrClQWWDqev4lV7BrDvYCmn8x3c1J-he2iHOF-w/exec";
         var request = new XMLHttpRequest();
         request.open('POST', url, true);
         // request successful
@@ -32,6 +32,15 @@ const EarlyAccess = () => {
         // request failed
         request.onerror = function() {
            console.log("request failed")
+           toast.error("Unable to subscribe at this time", {
+            position: "top-center",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
         };
 
         request.send(new FormData(event.target));
