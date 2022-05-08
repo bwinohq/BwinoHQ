@@ -2,11 +2,11 @@ import styled from "styled-components";
 import purple from "../assets/Purple-Card.svg";
 import ImageDiv from "./LazyLoading";
 
-const styles = {
-  height: "200px",
-  width: "200px",
-  backgroundColor: "purple"
-}
+// const styles = {
+//   height: "200px",
+//   width: "200px",
+//   backgroundColor: "purple"
+// }
   
 
 const Card = () => {
