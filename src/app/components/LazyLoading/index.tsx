@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, ImgHTMLAttributes } from 'react';
+import styled from "styled-components";
 
-interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-    placeholderImg?: string;
+interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
+    placeholderImg?: any;
     errorImg?: string;
   }
 
@@ -21,5 +22,11 @@ const ImageDiv = ({ src, placeholderImg, errorImg, ...props }: ImageProps) => {
     <img {...props} src={imgSrc} alt="" />
   )
 }
+
+const imgDiv = styled.div`
+  height: 400px;
+  width: 400px;
+  background-color: purple;
+`
 
 export default ImageDiv;
