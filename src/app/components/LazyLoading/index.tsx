@@ -23,10 +23,10 @@ const ImageDiv = ({ src, placeholderImg, errorImg, ...props }: ImageProps) => {
   )
 }
 
-const imgDiv = styled.div`
-  height: 400px;
-  width: 400px;
-  background-color: purple;
-`
+// const imgDiv = styled.div`
+//   height: 400px;
+//   width: 400px;
+//   background-color: purple;
+// `
 
 export default ImageDiv;
